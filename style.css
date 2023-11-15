@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+:root {
+  --primary: hsl(0, 100%, 67%);
+  --Orangey: yellow hsl(39, 100%, 56%);
+  --Green: teal hsl(166, 100%, 37%);
+  --Cobalt: blue hsl(234, 85%, 45%);
+}
+.card {
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 60%;
+  grid-template-columns: 50% 50%;
+  box-shadow: 3px 3px 10px 5px rgba(104, 142, 179, 0.173);
+  border-radius: 1.5rem;
+}
+
+.contenedor {
+  padding: 20px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  border-radius: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+    margin: 0;
+  }
+
+  .contenedor {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .card {
+    width: 50%;
+  }
+}
+
+.parrafo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.number {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0px auto;
+  padding: 3%;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 4rem;
+}
+
+.of {
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 0.8rem;
+}
+
+.sub-title,
+.letter {
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.contenedor-2 {
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+  border-radius: 1.5rem;
+  margin: 1rem 0;
+}
+
+.row {
+  display: flex;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+.row svg {
+  margin-right: 10px;
+}
+
+.sumer {
+  margin-bottom: 2rem;
+}
+
+.summer1 {
+  background-color: hsla(0, 100%, 67%, 0.085);
+  color: hsl(0, 100%, 67%);
+}
+
+.summer2 {
+  background-color: rgba(255, 255, 0, 0.092);
+  color: hsl(39, 100%, 56%);
+}
+
+.summer3 {
+  background-color: hsla(166, 100%, 37%, 0.093);
+  color: hsl(166, 100%, 37%);
+}
+
+.summer4 {
+  background-color: hsla(234, 85%, 45%, 0.074);
+  color: hsl(234, 85%, 45%);
+}
+
+.one {
+  color: hsl(224, 30%, 27%);
+  margin-left: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.boton {
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  padding: 14px 5rem;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  border: 12px;
+  border-radius: 3rem;
+}
+
+.boton:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+@media screen and (max-width: 600px) {
+  .boton {
+    width: 100%;
+  }
+}
